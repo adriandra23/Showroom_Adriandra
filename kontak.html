@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Showroom Ade Perum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="adriandra_header">
+        <div class="adriandra_container">
+            <h1 class="adriandra_logo">Showroom Ade Perum</h1>
+            <nav class="adriandra_nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="katalog.html">Katalog</a></li>
+                    <li><a href="layanan.html">Layanan</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="testimoni.html">Testimoni</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="kontak.html" class="adriandra_active">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="adriandra_layanan_hero">
+        <div class="adriandra_container">
+            <h2>Hubungi Showroom Ade Perum</h2>
+            <p>Silakan tanya stok unit, simulasi kredit, tukar tambah, atau jadwalkan kunjungan langsung ke showroom kami.</p>
+        </div>
+    </section>
+
+    <section class="adriandra_section">
+        <div class="adriandra_container">
+            <div class="adriandra_kontak_wrapper">
+
+                <div class="adriandra_kontak_info">
+                    <h3>Informasi Showroom</h3>
+                    <p>Datang langsung untuk cek unit dan test drive sepuasnya:</p>
+
+                    <div class="adriandra_info_item">
+                        <strong>📍 Alamat Showroom:</strong>
+                        <p>Perum Pondok Indah Parahyangan, Kab. Ciamis, Jawa Barat</p>
+                    </div>
+
+                    <div class="adriandra_info_item">
+                        <strong>📱 WhatsApp / Telepon:</strong>
+                        <p>0896-6236-9506 (Admin Showroom)</p>
+                    </div>
+
+                    <div class="adriandra_info_item">
+                        <strong>🕒 Jam Operasional:</strong>
+                        <p>Senin - Minggu: 08.00 - 17.00 WIB</p>
+                    </div>
+                </div>
+
+                <div class="adriandra_kontak_form_box">
+                    <h3>Kirim Pertanyaan via WhatsApp</h3>
+                    <p>Isi form di bawah ini, pesan akan otomatis diteruskan ke WhatsApp kami.</p>
+
+                    <form onsubmit="kirimWhatsApp(event)">
+                        <div class="adriandra_form_grup">
+                            <label for="nama_pengirim">Nama Lengkap *</label>
+                            <input type="text" id="nama_pengirim" placeholder="Contoh: Kang Budi" required>
+                        </div>
+
+                        <div class="adriandra_form_grup">
+                            <label for="pilihan_mobil">Unit yang Diminati</label>
+                            <select id="pilihan_mobil">
+                                <option value="Umum / Tanya Stok Lain">Umum / Tanya Stok Lain</option>
+                                <optgroup label="Toyota">
+                                    <option value="Toyota Avanza 2020">Toyota Avanza 2020</option>
+                                    <option value="Toyota Innova Reborn 2018">Toyota Innova Reborn 2018</option>
+                                </optgroup>
+                                <optgroup label="Mitsubishi">
+                                    <option value="Mitsubishi Pajero Sport 2019">Mitsubishi Pajero Sport 2019</option>
+                                    <option value="Mitsubishi Xpander 2022">Mitsubishi Xpander 2022</option>
+                                </optgroup>
+                                <optgroup label="Honda">
+                                    <option value="Honda Brio 2021">Honda Brio 2021</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="adriandra_form_grup">
+                            <label for="jenis_layanan">Keperluan</label>
+                            <select id="jenis_layanan">
+                                <option value="Tanya Unit / Cek Fisik">Tanya Unit / Cek Fisik</option>
+                                <option value="Pembelian Cash">Pembelian Cash</option>
+                                <option value="Simulasi Kredit">Simulasi Kredit</option>
+                                <option value="Tukar Tambah">Tukar Tambah</option>
+                            </select>
+                        </div>
+
+                        <div class="adriandra_form_grup">
+                            <label for="isi_pesan">Pesan / Pertanyaan *</label>
+                            <textarea id="isi_pesan" rows="4" placeholder="Tulis pertanyaan Anda di sini..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="adriandra_btn_wa">Kirim Pesan ke WhatsApp</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="adriandra_footer">
+        <p>&copy; 2026 Adriandra</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

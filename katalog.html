@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog - Showroom Ade Perum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="adriandra_header">
+        <div class="adriandra_container">
+            <h1 class="adriandra_logo">Showroom Ade Perum</h1>
+            <nav class="adriandra_nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="katalog.html" class="adriandra_active">Katalog</a></li>
+                    <li><a href="layanan.html">Layanan</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="testimoni.html">Testimoni</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="adriandra_katalog_hero">
+        <div class="adriandra_container">
+            <span class="adriandra_badge_lokasi">🚘 Stok Unit Ready & Siap Pakai</span>
+            <h2>Katalog Mobil Showroom Ade Perum</h2>
+            <p>Semua unit sudah melewati inspeksi mesin dan kelengkapan surat. Klik tombol <strong>Detail Mobil</strong> untuk melihat spesifikasi lengkap beserta plat nomor dan status pajaknya.</p>
+        </div>
+    </section>
+
+    <section class="adriandra_section">
+        <div class="adriandra_container">
+            <h2>Pilihan Unit Tersedia</h2>
+            <p class="adriandra_sub_judul">Bisa pembelian cash, kredit DP ringan, maupun tukar tambah</p>
+
+            <div class="adriandra_katalog_grid">
+                
+                <div class="adriandra_katalog_card">
+                    <img src="avanza.jpg" alt="Toyota Avanza" class="adriandra_foto_katalog">
+                    <span class="adriandra_katalog_badge">Pajak Hidup • Siap Pakai</span>
+                    <h3>Toyota Avanza 2020</h3>
+                    <p class="adriandra_katalog_info_singkat">2020 • Manual • 1300 CC</p>
+                    <p class="adriandra_katalog_price">Rp 147.000.000</p>
+                    <button class="adriandra_btn_detail_mobil" onclick="bukaModal('Toyota Avanza 2020', 'avanza.jpg', '2020', 'Manual', '1300 CC', '40.000 km', 'Hitam', 'Z 4501 WZ', 'Hidup', 'Rp 147.000.000')">Detail Mobil</button>
+                </div>
+
+                <div class="adriandra_katalog_card">
+                    <img src="brio.jpg" alt="Honda Brio" class="adriandra_foto_katalog">
+                    <span class="adriandra_katalog_badge">Pajak Hidup • Irit BBM</span>
+                    <h3>Honda Brio 2021</h3>
+                    <p class="adriandra_katalog_info_singkat">2021 • Matic • 1200 CC</p>
+                    <p class="adriandra_katalog_price">Rp 163.000.000</p>
+                    <button class="adriandra_btn_detail_mobil" onclick="bukaModal('Honda Brio 2021', 'brio.jpg', '2021', 'Matic', '1200 CC', '27.000 km', 'Merah', 'D 5678 CD', 'Hidup', 'Rp 163.000.000')">Detail Mobil</button>
+                </div>
+
+                <div class="adriandra_katalog_card">
+                    <img src="pajero.webp" alt="Mitsubishi Pajero" class="adriandra_foto_katalog">
+                    <span class="adriandra_katalog_badge">Pajak Hidup • Unit Primadona</span>
+                    <h3>Mitsubishi Pajero Sport 2019</h3>
+                    <p class="adriandra_katalog_info_singkat">2019 • Matic • 2500 CC</p>
+                    <p class="adriandra_katalog_price">Rp 452.000.000</p>
+                    <button class="adriandra_btn_detail_mobil" onclick="bukaModal('Mitsubishi Pajero Sport 2019', 'pajero.webp', '2019', 'Matic', '2500 CC', '55.000 km', 'Hitam', 'B 2669 SXR', 'Hidup', 'Rp 452.000.000')">Detail Mobil</button>
+                </div>
+
+                <div class="adriandra_katalog_card">
+                    <img src="xpander.jpg" alt="Mitsubishi Xpander" class="adriandra_foto_katalog">
+                    <span class="adriandra_katalog_badge">Pajak Hidup • KM Rendah</span>
+                    <h3>Mitsubishi Xpander 2022</h3>
+                    <p class="adriandra_katalog_info_singkat">2022 • Matic • 1500 CC</p>
+                    <p class="adriandra_katalog_price">Rp 241.000.000</p>
+                    <button class="adriandra_btn_detail_mobil" onclick="bukaModal('Mitsubishi Xpander 2022', 'xpander.jpg', '2022', 'Matic', '1500 CC', '20.000 km', 'Hitam', 'D 4321 GH', 'Hidup', 'Rp 241.000.000')">Detail Mobil</button>
+                </div>
+
+                <div class="adriandra_katalog_card">
+                    <img src="innova1.jpg" alt="Toyota Innova" class="adriandra_foto_katalog">
+                    <span class="adriandra_katalog_badge">Pajak Hidup • Kondisi Prima</span>
+                    <h3>Toyota Innova reborn 2018</h3>
+                    <p class="adriandra_katalog_info_singkat">2018 • Manual • 2000 CC</p>
+                    <p class="adriandra_katalog_price">Rp 320.000.000</p>
+                    <button class="adriandra_btn_detail_mobil" onclick="bukaModal('Toyota Innova reborn 2018', 'innova1.jpg', '2018', 'Manual', '2000 CC', '63.000 km', 'Putih', 'L 7766 IJ', 'Hidup', 'Rp 320.000.000')">Detail Mobil</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="adriandra_cta_section">
+        <div class="adriandra_container">
+            <h3>Belum Nemu Unit yang Cocok di Katalog?</h3>
+            <p>Stok unit di showroom terus berputar. Hubungi kami untuk tanya unit yang baru masuk atau jadwalkan test drive langsung di Ciamis!</p>
+            <div class="adriandra_cta_buttons">
+                <a href="kontak.html" class="adriandra_btn_utama">Tanya Stok / Jadwal Test Drive</a>
+                <a href="layanan.html" class="adriandra_btn_kedua">Info Kredit & Tukar Tambah</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="adriandra_modal" class="adriandra_modal">
+        <div class="adriandra_modal_content">
+            <span class="adriandra_close" onclick="tutupModal()">&times;</span>
+            <h3 id="modal_title" style="margin-top: 5px; color: #222;">Nama Mobil</h3>
+            <img id="modal_img" src="" alt="Foto Mobil" class="adriandra_foto_modal">
+            
+            <table class="adriandra_tabel_spek">
+                <tr><td>Tahun Pembuatan</td><td id="modal_tahun"></td></tr>
+                <tr><td>Transmisi</td><td id="modal_transmisi"></td></tr>
+                <tr><td>Kapasitas Mesin</td><td id="modal_cc"></td></tr>
+                <tr><td>Kilometer</td><td id="modal_km"></td></tr>
+                <tr><td>Warna</td><td id="modal_warna"></td></tr>
+                <tr><td>Plat Nomor</td><td id="modal_plat"></td></tr>
+                <tr><td>Status Pajak</td><td id="modal_pajak"></td></tr>
+            </table>
+            
+            <h3 id="modal_price" class="adriandra_katalog_price" style="font-size: 22px; margin: 18px 0 12px;"></h3>
+            <a href="kontak.html" class="adriandra_btn_minat_modal">Minat Unit Ini? Hubungi Kami</a>
+        </div>
+    </div>
+
+    <footer id="adriandra_footer">
+        <p>&copy; 2026 Adriandra</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
